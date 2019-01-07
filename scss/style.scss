@@ -1,2 +1,87 @@
+// Variables
+$h1: 3.2rem;
+$h2: 2.5rem;
+$h3: 2.1rem;
+$p: 1.6rem;
+
+$main: #FFFBF2;
+
+// Media Query
+$breakpoints: (
+        'sm': 'screen and (min-width: 700px)',
+        'md': 'screen and (min-width: 1000px)',
+        'lg': 'screen and (min-width: 1200px)',
+        'g-md': 'screen and (min-width: 932px)',
+) !default;
 
 
+// Mixin
+
+
+// Media Query
+@mixin mq($breakpoint: sm) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+
+// Font
+@import url('https://fonts.googleapis.com/css?family=Oswald');   //font-family: 'Oswald', sans-serif;
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url('../font/Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Inter-Medium';
+  src: url('../font/Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Inter-Bold';
+  src: url('../font/Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Inter-Light';
+  src: url('../font/Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Inter-ExtraLight';
+  src: url('../font/ExtraLight.otf') format('opentype');
+}
+
+
+// Base
+
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+}
+
+h1 {
+  font-size: $h1;
+}
+
+h2 {
+  font-size: $h2;
+}
+
+h3 {
+  font-size: $h3;
+}
+
+p {
+  font-size: $p;
+}
