@@ -50,11 +50,11 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 header {
@@ -135,4 +135,19 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 100%;
+}
+
+.article-container .articles .grid-sizer h4,
+.article-container .articles .grid-item h4 {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+.article-container .articles .grid-sizer p,
+.article-container .articles .grid-item p {
+  margin: 0;
+}
+
+.article-container .articles .mb {
+  margin-bottom: 2rem;
 }

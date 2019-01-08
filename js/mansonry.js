@@ -4,7 +4,6 @@
         itemSelector: '.grid-item',
         gutter: 10.5,
         percentPosition: true
-        // fitWidth: true
     });
 
 $(window).on('load',function() {
