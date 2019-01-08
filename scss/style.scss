@@ -1,9 +1,9 @@
 // Variables
 $h1: 3.5rem;
 $h2: 3rem;
-$h3: 2.5rem;
-$h4: 2rem;
-$p: 1.6rem;
+$h3: 2rem;
+$h4: 1.5rem;
+$p: 1.3rem;
 
 $main: #FFFBF2;
 
@@ -96,9 +96,10 @@ p {
 
 header {
   width: 100%;
-  height: 10vh;
+  height: 20px;
   position: fixed;
   top: 0;
+  z-index: 10;
 
   background: darkgrey;
 }
@@ -108,15 +109,71 @@ header {
 
 .new-article-container {
   position: relative;
-  height: 100vh;
+  height: 90vh;
 
-  .overlay {
+  .new-article-bg {
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
-    background: url("../img/vietnam.jpg");
-    background-size: cover;
+    background: url("../img/vietnam.jpg") no-repeat center center / cover;
+    z-index: 1;
+
+    border: greenyellow solid 1px;
+  }
+
+  .new-article-dsc {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    padding: 2rem;
+
+    border: greenyellow solid 1px;
+
+    h1 {
+      font-size: 3rem;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+
+    a {
+      font-family: Inter-Bold, sans-serif;
+      display: block;
+      text-align: center;
+      line-height: 3rem;
+      background: white;
+      text-decoration: none;
+    }
+  }
+}
+
+.article-container {
+
+  .articles {
+    margin: 0 auto;
+
+    .grid-item {
+      //width: 50%;
+      width: calc(50% - 6px);
+
+      .link-img {
+        width: 100%;
+
+        a {
+          display: block;
+          width: 100%;
+          background-image: url("../img/goldenGate.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          padding-top: 100%;
+        }
+      }
+
+    }
   }
 }
 
