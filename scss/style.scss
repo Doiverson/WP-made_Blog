@@ -118,8 +118,6 @@ header {
     height: 100%;
     background: url("../img/vietnam.jpg") no-repeat center center / cover;
     z-index: 1;
-
-    border: greenyellow solid 1px;
   }
 
   .new-article-dsc {
@@ -128,8 +126,6 @@ header {
     bottom: 0;
     z-index: 2;
     padding: 2rem;
-
-    border: greenyellow solid 1px;
 
     h1 {
       font-size: 3rem;
@@ -152,10 +148,15 @@ header {
 }
 
 .article-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
 
   .articles {
+    width: 100%;
     margin: 0 auto;
 
+    .grid-sizer,
     .grid-item {
       //width: 50%;
       width: calc(50% - 6px);

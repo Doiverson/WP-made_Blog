@@ -1,9 +1,10 @@
 
     var $grid = $('.grid').masonry({
-        columnWidth: 204,
+        columnWidth: '.grid-sizer',
         itemSelector: '.grid-item',
-        gutter: 4,
-        fitWidth: true
+        gutter: 10.5,
+        percentPosition: true
+        // fitWidth: true
     });
 
 $(window).on('load',function() {

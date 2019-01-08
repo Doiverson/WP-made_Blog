@@ -78,7 +78,6 @@ header {
   height: 100%;
   background: url("../img/vietnam.jpg") no-repeat center center/cover;
   z-index: 1;
-  border: greenyellow solid 1px;
 }
 
 .new-article-container .new-article-dsc {
@@ -87,7 +86,6 @@ header {
   bottom: 0;
   z-index: 2;
   padding: 2rem;
-  border: greenyellow solid 1px;
 }
 
 .new-article-container .new-article-dsc h1 {
@@ -108,18 +106,28 @@ header {
   text-decoration: none;
 }
 
+.article-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
 .article-container .articles {
+  width: 100%;
   margin: 0 auto;
 }
 
+.article-container .articles .grid-sizer,
 .article-container .articles .grid-item {
   width: calc(50% - 6px);
 }
 
+.article-container .articles .grid-sizer .link-img,
 .article-container .articles .grid-item .link-img {
   width: 100%;
 }
 
+.article-container .articles .grid-sizer .link-img a,
 .article-container .articles .grid-item .link-img a {
   display: block;
   width: 100%;
