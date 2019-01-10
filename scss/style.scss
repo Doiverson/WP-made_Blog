@@ -2,22 +2,29 @@
 $h1: 3.5rem;
 $h2: 3rem;
 $h3: 2rem;
-$h4: 1.6rem;
+$h4: 1.5rem;
 $p: 1.2rem;
 
 $main: #FFFBF2;
 
 // Media Query
 $breakpoints: (
+        'xsm': 'screen and (min-width: 550px)',
         'sm': 'screen and (min-width: 700px)',
         'md': 'screen and (min-width: 1000px)',
         'lg': 'screen and (min-width: 1200px)',
-        'g-md': 'screen and (min-width: 932px)',
 ) !default;
 
 
 // Mixin
-
+@mixin article-btn {
+  font-family: Inter-Bold, sans-serif;
+  display: block;
+  text-align: center;
+  line-height: 3rem;
+  background: white;
+  text-decoration: none;
+}
 
 // Media Query
 @mixin mq($breakpoint: sm) {
@@ -128,7 +135,6 @@ header {
     padding: 2rem;
 
     h1 {
-      font-size: 3rem;
       margin-top: 0;
     }
 
@@ -137,12 +143,7 @@ header {
     }
 
     a {
-      font-family: Inter-Bold, sans-serif;
-      display: block;
-      text-align: center;
-      line-height: 3rem;
-      background: white;
-      text-decoration: none;
+      @include article-btn;
     }
   }
 }
@@ -151,6 +152,11 @@ header {
   width: 100%;
   margin: 0 auto;
   padding: 1rem;
+
+  a {
+    @include article-btn;
+    background: #f0f0f0;
+  }
 
   .articles {
     width: 100%;
@@ -191,5 +197,84 @@ header {
 }
 
 
+// Short Self-Intro
+
+.self-dsc {
+  position: relative;
+  height: 70vmin;
+
+  @include mq(xsm) {
+    height: 60vmin;
+  }
+
+  .left-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../img/self-img.JPG") no-repeat center;
+    background-size: cover;
+  }
+
+  .right-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    .small-about {
+      color: white;
+      background: #717171ad;
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      right: 0;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+
+      h4 {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+        transition: margin-top 0.3s ease;
+
+        @include mq(xsm) {
+          margin-top: 5rem;
+        }
+      }
+
+      p {
+        font-size: 1.1rem;
+        margin: 0;
+      }
+    }
+
+    .sns-list {
+      display: inline-block;
+      position: absolute;
+      font-size: 1.8rem;
+      width: 50%;
+      bottom: 0;
+      right: 0;
+      text-align: center;
+      transition: margin-bottom 0.5s ease;
 
 
+      @include mq(xsm) {
+        margin-bottom: 4rem;
+        font-size: 2rem;
+      }
+
+      .icn {
+        margin-left: 0.5rem;
+        color: #ffdead;
+      }
+    }
+  }
+}
+
+
+
+// Footer
+
+footer {
+  text-align:  center;
+}
