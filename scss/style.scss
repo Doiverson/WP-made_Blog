@@ -114,6 +114,20 @@ header {
 
 // Top
 
+.top {
+  position: relative;
+
+  @include mq(md) {
+    .fix {
+      width: 50%;
+      position: fixed;
+      top: 0;
+    }
+  }
+}
+
+
+
 .new-article-container {
   position: relative;
   height: 90vh;
@@ -152,6 +166,11 @@ header {
   width: 100%;
   margin: 0 auto;
   padding: 1rem;
+
+  @include mq(md) {
+    width: 50%;
+    float: right;
+  }
 
   a {
     @include article-btn;
@@ -205,6 +224,10 @@ header {
 
   @include mq(xsm) {
     height: 60vmin;
+  }
+
+  @include mq(md) {
+    clear: both;
   }
 
   .left-img {
