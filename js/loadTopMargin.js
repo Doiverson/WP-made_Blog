@@ -1,3 +1,5 @@
+//Topページだけに適用したい
+
 
 const mediaQuery = window.matchMedia( "(min-width: 1000px)" );
 
@@ -5,6 +7,9 @@ let resizeTimer;
 const interval = Math.floor(1000 / 60 * 10);
 
 function loadTopMargin(mq) {
+
+    console.log("Loaded top margin");
+
     const wrapperHeight = document.getElementById('site-wrapper');
     let header1 = document.querySelector('header').clientHeight;
     let fixHeight = document.querySelector('.fix').clientHeight;
