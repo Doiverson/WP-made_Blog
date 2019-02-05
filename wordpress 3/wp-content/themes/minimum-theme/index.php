@@ -15,6 +15,107 @@
 
 <?php get_header()?>
 
-<p>This is test</p>
+<?php echo get_template_directory_uri()?>
+    <div id="site-wrapper">
+
+        <!--New article on the left & some articles on the right with scroll-->
+        <div class="top">
+            <div class="fix">
+                <div class="new-article-container">
+                    <div class="new-article-bg"></div>
+                    <div class="new-article-dsc">
+                        <h1>Vietnam Trip</h1>
+                        <p>Co-founder and technical director of Funkhaus, an LA-based creative agency. He is passionate about bringing a human-centric perspective to digital design.</p>
+                        <a href="#">Read Article</a>
+                    </div>
+                </div>
+            </div>
+            <div class="article-container">
+                <div class="articles grid">
+                    <!--Masonry grid-->
+                    <div class="grid-sizer"></div>
+                    <div class="grid-item mb">
+                        <div class="link-img">
+                            <a href="#"></a>
+                        </div>
+                        <h4 class="article-title">Trip to Italy</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    </div>
+                    <div class="grid-item mb">
+                        <div class="link-img">
+                            <a href="#"></a>
+                        </div>
+                        <h4 class="article-title">Trip to Italy</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    </div>
+                    <div class="grid-item mb">
+                        <div class="link-img">
+                            <a href="#"></a>
+                        </div>
+                        <h4 class="article-title">Trip to Italy</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    </div>
+                    <div class="grid-item mb">
+                        <div class="link-img">
+                            <a href="#"></a>
+                        </div>
+                        <h4 class="article-title">Trip to Italy</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    </div>
+                    <div class="grid-item mb">
+                        <div class="link-img">
+                            <a href="#"></a>
+                        </div>
+                        <h4 class="article-title">Trip to Italy</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    </div>
+                    <div class="grid-item mb">
+                        <div class="link-img">
+                            <a href="#"></a>
+                        </div>
+                        <h4 class="article-title">Trip to Italy</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    </div>
+                    <div class="grid-item mb">
+                        <div class="link-img">
+                            <a href="#"></a>
+                        </div>
+                        <h4 class="article-title">Trip to Italy</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    </div>
+
+                </div>
+                <a href="#">See all Articles</a>
+            </div>
+
+        </div>
+
+        <!--Small self-intro-->
+        <div class="self-dsc">
+            <div class="left-img"></div>
+
+            <div class="right-content">
+                <div class="small-about">
+                    <h4>Shosuke Doi</h4>
+                    <p>Co-founder and technical director of Funkhaus, an LA-based creative agency. He is passionate about bringing a human-centric perspective to digital design.</p>
+                </div>
+
+                <div class="sns-list">
+                    <a href="#" target="_blank"><i class="icn fa fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="icn fa fa-twitter-square"></i></a>
+                    <a href="#" target="_blank"><i class="icn fa fa-linkedin-square"></i></a>
+                    <a href="#" target="_blank"><i class="icn fa fa-github-square"></i></a>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Contact-->
+        <!--<div class="contact">-->
+        <!--<input type="text">-->
+        <!--<button>Go!!</button>-->
+        <!--</div>-->
+
+    </div>
 
 <?php get_footer() ?>
