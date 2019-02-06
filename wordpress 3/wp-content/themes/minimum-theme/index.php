@@ -15,19 +15,33 @@
 
 <?php get_header()?>
 
-<?php echo get_template_directory_uri()?>
     <div id="site-wrapper">
 
         <!--New article on the left & some articles on the right with scroll-->
         <div class="top">
             <div class="fix">
                 <div class="new-article-container">
-                    <div class="new-article-bg"></div>
-                    <div class="new-article-dsc">
-                        <h1>Vietnam Trip</h1>
-                        <p>Co-founder and technical director of Funkhaus, an LA-based creative agency. He is passionate about bringing a human-centric perspective to digital design.</p>
-                        <a href="#">Read Article</a>
-                    </div>
+
+                    <?php
+
+                    $args = array(
+                            'posts_per_page' => 1
+                    );
+                    $query = new WP_Query($args);
+
+                    ?>
+
+                    <?php if($query -> have_posts()) : while($query -> have_posts()) : $query -> the_post() ?>
+
+                        <div class="new-article-bg" style="background: url(<?php the_post_thumbnail_url() ?>) no-repeat center center/cover"></div>
+                        <div class="new-article-dsc">
+                            <h1><?php the_title(); ?></h1>
+                            <p><?php the_content(); ?></p>
+                            <a href="#">Read Article</a>
+                        </div>
+
+                    <?php endwhile; endif; wp_reset_postdata() ?>
+
                 </div>
             </div>
             <div class="article-container">
@@ -109,12 +123,6 @@
 
             </div>
         </div>
-
-        <!--Contact-->
-        <!--<div class="contact">-->
-        <!--<input type="text">-->
-        <!--<button>Go!!</button>-->
-        <!--</div>-->
 
     </div>
 

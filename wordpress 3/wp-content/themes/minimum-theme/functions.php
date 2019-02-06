@@ -9,12 +9,15 @@
 
 <?php
 
-function wps_theme_styles() {
-	wp_enqueue_style( 'normalize_css', get_template_directory_uri().'/css/normalize.css' );
-//    wp_enqueue_style( 'main_css', get_stylesheet_directory_uri().'/style.css' );
-}
+add_theme_support( 'menus' ); /*ナビゲーションバー追加*/
+add_theme_support( 'post-thumbnails' ); /*アイキャッチ画像設定追加*/
 
-add_action( 'wp_enqueue_scripts', 'wps_theme_styles' );
+
+//function wps_theme_styles() {
+//    wp_enqueue_style( 'normalize_css', get_template_directory_uri().'/css/normalize.css' );
+//}
+//
+//add_action( 'wp_enqueue_scripts', 'wps_theme_styles' );
 
 
 function wps_theme_js() {
@@ -27,5 +30,3 @@ function wps_theme_js() {
 }
 
 add_action( 'wp_enqueue_scripts', 'wps_theme_js' );
-
-?>
