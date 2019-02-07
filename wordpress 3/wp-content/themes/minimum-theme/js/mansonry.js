@@ -1,4 +1,4 @@
-
+jQuery(function($){
     var $grid = $('.grid').masonry({
         columnWidth: '.grid-sizer',
         itemSelector: '.grid-item',
@@ -6,8 +6,9 @@
         percentPosition: true
     });
 
-$(window).on('load',function() {
-    $grid.imagesLoaded().progress(function () {
-        $grid.masonry('layout');
+    $(window).on('load',function() {
+        $grid.imagesLoaded().progress(function () {
+            $grid.masonry('layout');
+        });
     });
 });

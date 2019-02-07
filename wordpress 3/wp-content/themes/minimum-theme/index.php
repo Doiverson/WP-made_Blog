@@ -36,7 +36,7 @@
                         <div class="new-article-bg" style="background: url(<?php the_post_thumbnail_url() ?>) no-repeat center center/cover"></div>
                         <div class="new-article-dsc">
                             <h1><?php the_title(); ?></h1>
-                            <p><?php the_content(); ?></p>
+                            <p><?php echo wp_strip_all_tags( get_the_excerpt() ) ?></p>
                             <a href="#">Read Article</a>
                         </div>
 
@@ -44,59 +44,29 @@
 
                 </div>
             </div>
+
             <div class="article-container">
                 <div class="articles grid">
+
                     <!--Masonry grid-->
                     <div class="grid-sizer"></div>
-                    <div class="grid-item mb">
-                        <div class="link-img">
-                            <a href="#"></a>
+
+                    <?php if( have_posts() ): while( have_posts() ) : the_post();  ?>
+
+                        <div class="grid-item mb">
+                            <div class="link-img">
+                                <a href="#" style="background: url(<?php the_post_thumbnail_url() ?>) no-repeat center / cover"></a>
+                            </div>
+                            <h4 class="article-title"><?php the_title() ?></h4>
+                            <p><?php echo wp_strip_all_tags( get_the_excerpt() ) ?></p>
                         </div>
-                        <h4 class="article-title">Trip to Italy</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                    </div>
-                    <div class="grid-item mb">
-                        <div class="link-img">
-                            <a href="#"></a>
-                        </div>
-                        <h4 class="article-title">Trip to Italy</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                    </div>
-                    <div class="grid-item mb">
-                        <div class="link-img">
-                            <a href="#"></a>
-                        </div>
-                        <h4 class="article-title">Trip to Italy</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                    </div>
-                    <div class="grid-item mb">
-                        <div class="link-img">
-                            <a href="#"></a>
-                        </div>
-                        <h4 class="article-title">Trip to Italy</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                    </div>
-                    <div class="grid-item mb">
-                        <div class="link-img">
-                            <a href="#"></a>
-                        </div>
-                        <h4 class="article-title">Trip to Italy</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                    </div>
-                    <div class="grid-item mb">
-                        <div class="link-img">
-                            <a href="#"></a>
-                        </div>
-                        <h4 class="article-title">Trip to Italy</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                    </div>
-                    <div class="grid-item mb">
-                        <div class="link-img">
-                            <a href="#"></a>
-                        </div>
-                        <h4 class="article-title">Trip to Italy</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                    </div>
+
+                    <?php endwhile; else: ?>
+
+                        <p><?php _e( 'Sorry, page found.', 'treehouse-portfolio' ); ?></p>
+
+                    <?php endif; ?>
+
 
                 </div>
                 <a href="#">See all Articles</a>
@@ -106,8 +76,7 @@
 
         <!--Small self-intro-->
         <div class="self-dsc">
-            <div class="left-img"></div>
-
+            <div class="left-img" style="background: url(<?php echo get_template_directory_uri() ?>/img/self-img.JPG) no-repeat center / cover"></div>
             <div class="right-content">
                 <div class="small-about">
                     <h4>Shosuke Doi</h4>
