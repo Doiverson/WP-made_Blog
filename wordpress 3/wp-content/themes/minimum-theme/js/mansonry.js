@@ -2,7 +2,7 @@ jQuery(function($){
     var $grid = $('.grid').masonry({
         columnWidth: '.grid-sizer',
         itemSelector: '.grid-item',
-        gutter: 10.5,
+        gutter: 26,
         percentPosition: true
     });
 
