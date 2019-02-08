@@ -333,3 +333,60 @@ header {
 footer {
   text-align:  center;
 }
+
+// Article Page
+
+.article-top {
+  height: calc(60vh + 60px);
+  padding-top: 60px;
+  position: relative;
+
+  .article-img {
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    background: url("../img/goldenGate.jpg") no-repeat center / cover;
+  }
+
+  .title-lead {
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+
+    h3 {
+      margin-top: 1rem;
+      margin-bottom: .5rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      margin: 0;
+    }
+  }
+
+}
+
+.articlePage-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.related-article {
+
+  .article-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    text-decoration: none;
+
+    .inner-content {
+      background: url("../img/vietnam.jpg") no-repeat center / cover;
+      width: 100%;
+      height: 15rem;
+      margin-bottom: 1rem;
+    }
+
+    }
+}
