@@ -374,6 +374,10 @@ footer {
 
 .related-article {
 
+  h3 {
+    border-bottom: 1px solid;
+  }
+
   .article-flex {
     display: flex;
     flex-wrap: wrap;
@@ -381,12 +385,40 @@ footer {
     width: 100%;
     text-decoration: none;
 
-    .inner-content {
-      background: url("../img/vietnam.jpg") no-repeat center / cover;
-      width: 100%;
-      height: 15rem;
+    li {
       margin-bottom: 1rem;
     }
 
+    a {
+      display: inline-block;
+      text-decoration: none;
+
+      .article-inner-flex {
+        display: flex;
+      }
+
+
+      .related-img {
+        width: 30%;
+
+        img {
+          max-width: 100%;
+          vertical-align: middle;
+        }
+      }
+
+      .related-article-dsc {
+        position: relative;
+        width: 65%;
+        padding-left: 1rem;
+
+        span {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
     }
+
+  }
 }
