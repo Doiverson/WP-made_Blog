@@ -9,12 +9,12 @@
 
 <?php
 
-function wpt_excerpt_length($length) {
-    return 10;
+function wpt_excerpt_length() {
+    return 1;
 }
 add_filter( 'excerpt_length', 'wpt_excerpt_length', 999 );
 
-function new_excerpt_more($more) {
+function new_excerpt_more() {
     return '...';
 }
 add_filter('excerpt_more', 'new_excerpt_more');

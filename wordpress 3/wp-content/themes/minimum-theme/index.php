@@ -27,6 +27,7 @@
                     $args = array(
                             'posts_per_page' => 1
                     );
+
                     $query = new WP_Query($args);
 
                     ?>
@@ -37,7 +38,7 @@
                         <div class="new-article-dsc">
                             <h1><?php the_title(); ?></h1>
                             <p><?php echo wp_strip_all_tags( get_the_excerpt() ) ?></p>
-                            <a href="#">Read Article</a>
+                            <a href="<?php the_permalink(); ?>">Read Article</a>
                         </div>
 
                     <?php endwhile; endif; wp_reset_postdata() ?>
@@ -54,11 +55,13 @@
                     <?php if( have_posts() ): while( have_posts() ) : the_post();  ?>
 
                         <div class="grid-item mb">
-                            <div class="link-img">
-                                <a href="#" style="background: url(<?php the_post_thumbnail_url() ?>) no-repeat center / cover"></a>
-                            </div>
-                            <h4 class="article-title"><?php the_title() ?></h4>
-                            <p><?php echo wp_strip_all_tags( get_the_excerpt() ) ?></p>
+
+                                <div class="link-img">
+                                    <a href="<?php the_permalink(); ?>" style="background: url(<?php the_post_thumbnail_url() ?>) no-repeat center / cover"></a>
+                                </div>
+                                <h4 class="article-title"><?php the_title() ?></h4>
+                                <p><?php echo wp_strip_all_tags( get_the_excerpt() ) ?></p>
+
                         </div>
 
                     <?php endwhile; else: ?>
