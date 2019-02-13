@@ -9,6 +9,19 @@
 
 <?php
 
+add_theme_support( 'menus' );
+add_theme_support( 'post-thumbnails' );
+
+function register_theme_menus() {
+    register_nav_menus(
+        array(
+            'primary-menu' => __( 'Primary Menu' )
+        )
+    );
+}
+add_action( 'init', 'register_theme_menus' );
+
+
 function wpt_excerpt_length() {
     return 1;
 }
@@ -18,10 +31,6 @@ function new_excerpt_more() {
     return '...';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
-
-add_theme_support( 'menus' );
-add_theme_support( 'post-thumbnails' );
-
 
 function wps_theme_styles() {
     wp_enqueue_style( 'normalize_css', get_template_directory_uri().'/css/normalize.css' );
