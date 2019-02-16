@@ -210,6 +210,51 @@ header {
   margin-bottom: 2rem;
 }
 
+.articleList-container {
+  margin-right: .5rem;
+  margin-left: .5rem;
+}
+
+@media screen and (min-width: 550px) {
+  .articleList-container {
+    margin-right: 3.5rem;
+    margin-left: 3.5rem;
+  }
+}
+
+.articleList-container a {
+  text-decoration: none;
+}
+
+.articleList-container .item-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.articleList-container .item {
+  background: #edf;
+  padding: 15px;
+  text-align: center;
+}
+
+.articleList-container .item .link-img {
+  width: 100%;
+  height: 10rem;
+  background: url("../img/goldenGate.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.articleList-container h4 {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+.articleList-container p {
+  margin: 0;
+}
+
 .self-dsc {
   position: relative;
   height: 70vmin;

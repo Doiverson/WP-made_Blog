@@ -22,4 +22,17 @@
 <body <?php body_class(); ?>>
 <header>
     <span>Stay Geek</span>
+
+    <?php
+
+    $defaults = array(
+        'container' => false,
+        'theme_location' => 'primary-menu',
+        'menu_class' => 'no-bullet'
+    );
+
+    wp_nav_menu( $defaults );
+
+    ?>
+
 </header>

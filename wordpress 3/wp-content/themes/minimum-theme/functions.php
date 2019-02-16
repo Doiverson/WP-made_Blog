@@ -23,7 +23,7 @@ add_action( 'init', 'register_theme_menus' );
 
 
 function wpt_excerpt_length() {
-    return 1;
+    return 10;
 }
 add_filter( 'excerpt_length', 'wpt_excerpt_length', 999 );
 
