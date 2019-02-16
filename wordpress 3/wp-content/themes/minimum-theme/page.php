@@ -8,10 +8,12 @@
 ?>
 
 <?php get_header()?>
+
+<div id="page-site-wrapper">
+
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-    <h1><?php the_title(); ?></h1>
-    <p><?php the_content(); ?></p>
+    <h1 style="margin-top: 0"><?php the_title(); ?></h1>
 
 <?php endwhile; else : ?>
 
@@ -47,6 +49,7 @@ $query = new WP_Query($args);
     </div>
 </div>
 
+</div>
 
 
 <?php get_footer() ?>

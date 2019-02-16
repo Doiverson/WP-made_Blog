@@ -118,6 +118,10 @@ header {
     }
 }
 
+#page-site-wrapper {
+    margin-top: 80px;
+}
+
 .new-article-container {
     position: relative;
     height: 90vh;
