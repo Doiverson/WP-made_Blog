@@ -1,5 +1,6 @@
 <?php
 /**
+ *Template Name: Gallery Page
  * Created by PhpStorm.
  * User: doiverson
  * Date: 2019-02-11

@@ -507,3 +507,127 @@ footer {
 
   }
 }
+
+// About Page
+.about-only {
+  position: relative;
+  height: 100%;
+}
+
+.about-wrapper {
+  margin-left: .5rem;
+  margin-right: .5rem;
+
+  @include mq(md) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @include mq(lg) {
+    height: 100%;
+  }
+
+  .about-img {
+    padding: 15px;
+
+    img {
+      max-width: 100%;
+      vertical-align: middle;
+    }
+  }
+
+  .about-dsc {
+    padding: 15px;
+
+    @include mq(md) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    @include mq(lg) {
+      height: 60%;
+    }
+
+    h4 {
+      margin-top: 1rem;
+      margin-bottom: .5rem;
+    }
+
+    p {
+      margin: 0;
+      text-align: justify;
+
+      @include mq(md) {
+        text-align: left;
+      }
+    }
+
+    .left-dsc {
+      width: 80%;
+
+      @include mq(md) {
+        width: 100%;
+        transform: translateX(-50%);
+        background: white;
+        padding: 1rem;
+      }
+    }
+
+    .right-dsc {
+      width: 80%;
+      margin-left: 20%;
+
+      @include mq(md) {
+        width: 100%;
+        transform: translateX(-25%);
+        background: white;
+        padding: 1rem;
+        margin: 0;
+      }
+
+      h4 {
+        text-align: right;
+
+        @include mq(md) {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.sns-links {
+  margin-left: .5rem;
+  margin-right: .5rem;
+  padding-right: 15px;
+  text-align: right;
+
+  @include mq(lg) {
+    right: 5%;
+    bottom: 5%;
+    position: absolute;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    padding-right: 15px;
+    text-align: right;
+    width: 100%;
+  }
+
+  li {
+    position: relative;
+  }
+
+  li:before {
+    content: '';
+    border-bottom: solid 2px black;
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+    right: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
