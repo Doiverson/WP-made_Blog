@@ -25,6 +25,7 @@ html {
 body {
     height: 100%;
     font-family: 'Oswald', sans-serif;
+    background: #f9f4ed;
 }
 
 h1 {
@@ -53,7 +54,6 @@ header {
     position: absolute;
     top: 0;
     z-index: 10;
-    background: #00b4a826;
 }
 
 header div {
@@ -96,6 +96,11 @@ header div span {
     }
     header div span {
      padding-left: 0;
+        font-size: 2rem;
+    }
+
+    #menu-main-menu {
+        font-size: 1.3rem;
     }
 }
 
@@ -130,7 +135,13 @@ header div span {
 }
 
 #page-site-wrapper {
-    margin-top: 80px;
+    margin-top: 60px;
+}
+
+@media screen and (min-width: 1000px) {
+    #page-site-wrapper {
+        margin-top: 80px;
+    }
 }
 
 .new-article-container {
@@ -164,7 +175,6 @@ header div span {
 }
 
 .new-article-container .new-article-dsc a {
-    font-family: Inter-Bold, sans-serif;
     display: block;
     text-align: center;
     line-height: 3rem;
@@ -253,8 +263,32 @@ header div span {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.articleList-container .item-grid a {
+    position: relative;
+}
+
+.articleList-container .item-grid a:before {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    right: 10px;
+    width: 50%;
+    top: 80%;
+    max-width:300px;
+    background: #777;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 15px 10px #777;
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
+
 .articleList-container .item {
-    background: #edf;
+    background: #ffdead;
     padding: .5rem;
     text-align: center;
     height: 100%;
@@ -545,10 +579,19 @@ footer {
 }
 
 @media screen and (min-width: 1000px) {
+    .about-wrapper {
+        margin-top: 3rem;
+    }
+
     .about-wrapper .about-dsc {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        padding-top: 0;
+    }
+
+    .about-wrapper .about-img {
+        padding-top: 0;
     }
 }
 
@@ -624,9 +667,8 @@ footer {
         right: 5%;
         bottom: 5%;
         position: absolute;
-        margin-left: .5rem;
-        margin-right: .5rem;
-        padding-right: 15px;
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
         text-align: right;
         width: 100%;
     }

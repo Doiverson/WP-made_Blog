@@ -87,10 +87,10 @@
                 </div>
 
                 <div class="sns-list">
-                    <a href="#" target="_blank"><i class="icn fa fa-instagram"></i></a>
-                    <a href="#" target="_blank"><i class="icn fa fa-twitter-square"></i></a>
-                    <a href="#" target="_blank"><i class="icn fa fa-linkedin-square"></i></a>
-                    <a href="#" target="_blank"><i class="icn fa fa-github-square"></i></a>
+                    <a href="https://www.instagram.com/doiverson/" target="_blank"><i class="icn fa fa-instagram"></i></a>
+                    <a href="https://twitter.com/Doiverson_JPN" target="_blank"><i class="icn fa fa-twitter-square"></i></a>
+                    <a href="https://www.linkedin.com/in/shovancouver/" target="_blank"><i class="icn fa fa-linkedin-square"></i></a>
+                    <a href="https://github.com/Doiverson" target="_blank"><i class="icn fa fa-github-square"></i></a>
                 </div>
 
             </div>

@@ -12,16 +12,6 @@
 
 <div id="page-site-wrapper">
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-    <h1 style="margin-top: 0"><?php the_title(); ?></h1>
-
-<?php endwhile; else : ?>
-
-    <p><?php _e( 'Sorry, page found.', 'treehouse-portfolio' ); ?></p>
-
-<?php endif; ?>
-
 <?php
 
 $args = array(
