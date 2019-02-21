@@ -72,14 +72,14 @@
 
 
                 </div>
-                <a href="#">See all Articles</a>
+                <a href="<?php echo get_page_link(44) ?>">See all Articles</a>
             </div>
 
         </div>
 
         <!--Small self-intro-->
         <div class="self-dsc">
-            <div class="left-img" style="background: url(<?php echo get_template_directory_uri() ?>/img/self-img.JPG) no-repeat center / cover"></div>
+            <div class="left-img" style="background: url(<?php echo get_template_directory_uri() ?>/img/self-img.JPG) no-repeat center top / cover"></div>
             <div class="right-content">
                 <div class="small-about">
                     <h4>Shosuke Doi</h4>

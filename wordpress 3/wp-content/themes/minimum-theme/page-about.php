@@ -1,6 +1,6 @@
 <?php
 /**
- *Template Name: About Page
+ *Template Name:  Page
  * Created by PhpStorm.
  * User: doiverson
  * Date: 2019-02-11
@@ -20,15 +20,25 @@
 
         <div class="about-dsc">
 
-            <div class="left-dsc">
-                <h4>Shosuke Doi</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            </div>
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-            <div class="right-dsc">
-                <h4>Hobby</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            </div>
+                <?php the_content() ?>
+
+            <?php endwhile; else : ?>
+
+                <p><?php _e( 'Sorry, page found.', 'treehouse-portfolio' ); ?></p>
+
+            <?php endif; ?>
+
+<!--            <div class="left-dsc">-->
+<!--                <h4>Shosuke Doi</h4>-->
+<!--                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>-->
+<!--            </div>-->
+<!---->
+<!--            <div class="right-dsc">-->
+<!--                <h4>Hobby</h4>-->
+<!--                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>-->
+<!--            </div>-->
 
         </div>
 

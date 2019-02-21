@@ -35,6 +35,8 @@ add_filter('excerpt_more', 'new_excerpt_more');
 function wps_theme_styles() {
     wp_enqueue_style( 'normalize_css', get_template_directory_uri().'/css/normalize.css' );
     wp_enqueue_style( 'style_css', get_template_directory_uri().'/style.css' );
+    wp_enqueue_style( 'webfonts', 'https://fonts.googleapis.com/css?family=Indie+Flower|Oswald|Roboto');
+
 }
 
 add_action( 'wp_enqueue_scripts', 'wps_theme_styles' );

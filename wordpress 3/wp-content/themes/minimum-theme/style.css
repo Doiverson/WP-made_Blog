@@ -9,31 +9,9 @@ License: テーマのライセンス
 License URI: テーマのライセンスのURI
 */
 
-@import url("https://fonts.googleapis.com/css?family=Oswald");
-@font-face {
-    font-family: 'Inter-Regular';
-    src: url( "/font/Regular.otf") format("opentype");
-}
-
-@font-face {
-    font-family: 'Inter-Medium';
-    src: url("/font/Medium.otf") format("opentype");
-}
-
-@font-face {
-    font-family: 'Inter-Bold';
-    src: url("/font/Bold.otf") format("opentype");
-}
-
-@font-face {
-    font-family: 'Inter-Light';
-    src: url("/font/Light.otf") format("opentype");
-}
-
-@font-face {
-    font-family: 'Inter-ExtraLight';
-    src: url("/font/ExtraLight.otf") format("opentype");
-}
+/*font-family: 'Oswald', sans-serif;*/
+/*font-family: 'Indie Flower', cursive;*/
+/*font-family: 'Roboto', sans-serif;*/
 
 html {
     box-sizing: border-box;
@@ -46,6 +24,7 @@ html {
 
 body {
     height: 100%;
+    font-family: 'Oswald', sans-serif;
 }
 
 h1 {
@@ -77,6 +56,35 @@ header {
     background: #00b4a826;
 }
 
+header div {
+    height: 100%;
+    position: relative;
+}
+
+header div span {
+    font-family: 'Indie Flower', cursive;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    padding-left: .5rem;
+}
+
+#menu-main-menu {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+#menu-main-menu li a {
+    text-decoration: none;
+}
+
 @media screen and (min-width: 1000px) {
     header {
         height: 80px;
@@ -85,6 +93,9 @@ header {
     }
     header .header-hide {
         top: -88px;
+    }
+    header div span {
+     padding-left: 0;
     }
 }
 
@@ -176,7 +187,6 @@ header {
 }
 
 .article-container a {
-    font-family: "Inter-Bold", sans-serif;
     display: block;
     text-align: center;
     line-height: 3rem;
@@ -228,8 +238,8 @@ header {
 
 @media screen and (min-width: 550px) {
     .articleList-container {
-        margin-right: 3.5rem;
-        margin-left: 3.5rem;
+        margin-right: 3rem;
+        margin-left: 3rem;
     }
 }
 
@@ -245,7 +255,7 @@ header {
 
 .articleList-container .item {
     background: #edf;
-    padding: 15px;
+    padding: .5rem;
     text-align: center;
     height: 100%;
 }
@@ -395,6 +405,7 @@ footer {
     position: absolute;
     bottom: 0;
     padding: 2rem;
+    color: white;
     -webkit-transition: 0.5s ease-in;
     -moz-transition: 0.5s ease-in;
     -ms-transition: 0.5s ease-in;
@@ -413,6 +424,7 @@ footer {
         width: 40%;
         right: 0;
         bottom: 100px;
+        color: black;
     }
 }
 
@@ -437,6 +449,10 @@ footer {
         padding-right: 15%;
         padding-left: 15%;
     }
+}
+
+.articlePage-container .article-content {
+    font-family: 'Roboto', sans-serif;
 }
 
 .related-article h3 {
@@ -489,7 +505,6 @@ footer {
 
 .about-only {
     position: relative;
-    height: 100%;
 }
 
 .about-wrapper {
@@ -499,8 +514,14 @@ footer {
 
 @media screen and (min-width: 1000px) {
     .about-wrapper {
+        margin-right: 3.5rem;
+        margin-left: 3.5rem;
         display: flex;
         flex-direction: row;
+    }
+
+    .about-only {
+        height: 100%;
     }
 }
 
@@ -511,7 +532,7 @@ footer {
 }
 
 .about-wrapper .about-img {
-    padding: 15px;
+    padding: .5rem;
 }
 
 .about-wrapper .about-img img {
@@ -520,7 +541,7 @@ footer {
 }
 
 .about-wrapper .about-dsc {
-    padding: 15px;
+    padding: .5rem;
 }
 
 @media screen and (min-width: 1000px) {
@@ -594,7 +615,7 @@ footer {
 .sns-links {
     margin-left: .5rem;
     margin-right: .5rem;
-    padding-right: 15px;
+    padding-right: .5rem;
     text-align: right;
 }
 
@@ -615,7 +636,7 @@ footer {
     position: relative;
 }
 
-.sns-links li:before {
+.sns-links li:after {
     content: '';
     border-bottom: solid 2px black;
     position: absolute;
@@ -631,5 +652,5 @@ footer {
 /*Footer*/
 
 footer {
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
