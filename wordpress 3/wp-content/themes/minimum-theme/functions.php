@@ -49,6 +49,7 @@ function wps_theme_js() {
     wp_enqueue_script('imageLoaded_js', 'https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js', '', '', true);
     wp_enqueue_script('masonry_js', get_template_directory_uri().'/js/mansonry.js', array('jquery'), '', true);
     wp_enqueue_script('scroll_js', get_template_directory_uri().'/js/scroll-loose.js', '', '', true);
+    wp_enqueue_script('followingNav_js', get_template_directory_uri().'/js/followingNav.js', '', '', true);
 }
 
 add_action( 'wp_enqueue_scripts', 'wps_theme_js' );

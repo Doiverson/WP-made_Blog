@@ -85,6 +85,19 @@ header div span {
     text-decoration: none;
 }
 
+.highlight {
+    transition: all 0.2s;
+    border-bottom:2px solid #00b9ab;
+    position: absolute;
+    top:0;
+    background: #00b9ab;
+    left:0;
+    z-index: -1;
+    border-radius: 30px;
+    display: block;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
 @media screen and (min-width: 1000px) {
     header {
         height: 80px;
