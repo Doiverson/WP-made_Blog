@@ -21,3 +21,5 @@ articleArray.forEach((b) => {
     TweenMax.to(b, 2, {opacity:1, x:0 , ease:Sine.easeOut, delay:delayTime2});
     delayTime2 += 0.5;
 });
+
+// About page

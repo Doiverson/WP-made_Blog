@@ -1,6 +1,6 @@
 <?php
 /**
- *Template Name:  Page
+ *Template Name: About Page
  * Created by PhpStorm.
  * User: doiverson
  * Date: 2019-02-11

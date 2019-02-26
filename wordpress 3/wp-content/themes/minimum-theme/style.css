@@ -41,7 +41,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 p {
@@ -154,7 +154,7 @@ header div span {
 
 @media screen and (min-width: 1000px) {
     #page-site-wrapper {
-        margin-top: 80px;
+        margin-top: 100px;
     }
 }
 
@@ -253,6 +253,14 @@ header div span {
     margin-bottom: .5rem;
 }
 
+@media screen and (min-width: 550px) {
+    .article-container .articles .grid-item h4{
+        font-size: 1.5rem;
+    }
+}
+
+
+
 .article-container .articles .grid-sizer p,
 .article-container .articles .grid-item p {
     margin: 0;
@@ -343,6 +351,10 @@ header div span {
 
     .articleList-container p {
         font-size: 1.2rem;
+    }
+
+    .articleList-container h4 {
+        font-size: 1.5rem;
     }
 
     .self-dsc {
@@ -647,6 +659,14 @@ footer {
 
 .about-wrapper .about-dsc .left-dsc {
     width: 80%;
+    /*opacity: 0;*/
+    /*transform: translateX(-20px);*/
+}
+
+@media screen and (min-width: 550px) {
+    .about-wrapper .about-dsc h4 {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -661,6 +681,8 @@ footer {
 .about-wrapper .about-dsc .right-dsc {
     width: 80%;
     margin-left: 20%;
+    /*opacity: 0;*/
+    /*transform: translateX(-20px);*/
 }
 
 @media screen and (min-width: 1000px) {
