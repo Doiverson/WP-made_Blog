@@ -25,15 +25,8 @@ function looseFix() {
 
     let topContainer = document.querySelector('.top');
     let bottomOfTop = topContainer.scrollHeight;
-
     let windowScroll = (window.scrollY + window.innerHeight);
-
-    console.log("scroll Y" + window.screenY);
-    console.log("inner height" + window.innerHeight);
-    console.log("windowScroll" + windowScroll);
-
     let scrollInAt = bottomOfTop + topMargin + 40;
-    console.log("scrollInAt" + scrollInAt);
 
     if(windowScroll >= scrollInAt + headerHeight ) {
         classFix.classList.add('loose-fix');

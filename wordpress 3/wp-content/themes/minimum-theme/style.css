@@ -160,6 +160,8 @@ header div span {
 .new-article-container {
     position: relative;
     height: 90vh;
+    opacity: 0;
+    transform: translateX(-20px);
 }
 
 .new-article-container .new-article-bg {
@@ -225,6 +227,8 @@ header div span {
 .article-container .articles .grid-sizer,
 .article-container .articles .grid-item {
     width: calc(50% - 13px); /* subtract a half of gutter width for Masonry.js */
+    opacity: 0;
+    transform: translateX(-20px);
 }
 
 .article-container .articles .grid-sizer .link-img,
