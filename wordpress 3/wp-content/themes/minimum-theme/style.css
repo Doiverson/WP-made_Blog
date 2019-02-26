@@ -45,7 +45,7 @@ h4 {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 header {
@@ -83,6 +83,7 @@ header div span {
 
 #menu-main-menu li a {
     text-decoration: none;
+    padding: 5px;
 }
 
 .highlight {
@@ -185,10 +186,6 @@ header div span {
     margin-top: 0;
 }
 
-.new-article-container .new-article-dsc p {
-    font-size: 1.4rem;
-}
-
 .new-article-container .new-article-dsc a {
     display: block;
     text-align: center;
@@ -202,6 +199,13 @@ header div span {
     margin: 0 auto;
     padding: 1rem;
 }
+
+@media screen and (min-width: 550px) {
+    .new-article-container .new-article-dsc p {
+        font-size: 1.4rem;
+    }
+}
+
 
 @media screen and (min-width: 1000px) {
     .article-container {
@@ -309,6 +313,8 @@ header div span {
     padding: .5rem;
     text-align: center;
     height: 100%;
+    opacity: 0;
+    transform: translateX(-20px);
 }
 
 
@@ -325,6 +331,7 @@ header div span {
 
 .articleList-container p {
     margin: 0;
+    text-align: left;
 }
 
 .self-dsc {
@@ -333,6 +340,11 @@ header div span {
 }
 
 @media screen and (min-width: 550px) {
+
+    .articleList-container p {
+        font-size: 1.2rem;
+    }
+
     .self-dsc {
         height: 60vmin;
     }
@@ -381,7 +393,6 @@ header div span {
 }
 
 .self-dsc .right-content .small-about p {
-    font-size: 1.1rem;
     margin: 0;
 }
 
