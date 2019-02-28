@@ -23,7 +23,7 @@ html {
 }
 
 body {
-    height: 100%;
+    /*height: 100%;*/
     font-family: 'Oswald', sans-serif;
     background: #f9f4ed;
 }
@@ -675,12 +675,15 @@ footer {
         transform: translateX(-50%);
         background: white;
         padding: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
     }
 }
 
 .about-wrapper .about-dsc .right-dsc {
     width: 80%;
     margin-left: 20%;
+    z-index: 3;
     /*opacity: 0;*/
     /*transform: translateX(-20px);*/
 }
@@ -714,12 +717,12 @@ footer {
 
 @media screen and (min-width: 1200px) {
     .sns-links {
-        right: 5%;
+        left: 5%;
         bottom: 5%;
         position: absolute;
         margin-left: 3.5rem;
         margin-right: 3.5rem;
-        text-align: right;
+        text-align: left;
         width: 100%;
     }
 }
@@ -737,8 +740,16 @@ footer {
     right: 0;
 }
 
+@media screen and (min-width: 1200px) {
+    .sns-links li:after {
+        left: 0;
+        right: 40%;
+    }
+}
+
 .sns-links a {
     text-decoration: none;
+    color: #ff5722;
 }
 
 /*Footer*/
@@ -746,3 +757,61 @@ footer {
 footer {
     margin-top: 3rem;
 }
+
+
+/*Contact Page*/
+
+.contact-only{
+    text-align: center;
+}
+
+.contact-title {
+    color: black;
+    text-transform: uppercase;
+    transition: all 4s ease-in-out;
+}
+
+.contact-title h1 {
+    font-size: 32px;
+}
+
+.contact-title h2 {
+    font-size: 10px;
+}
+
+form {
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+}
+
+.form-control {
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid grey;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+input {
+    height: 45px;
+}
+
+form .submit {
+    background: #ff5722;
+    border-color: transparent;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+form .submit:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
