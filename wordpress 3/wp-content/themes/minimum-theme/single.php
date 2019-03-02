@@ -30,7 +30,6 @@
             <div class="articlePage-container">
 
                 <div class="article-content">
-                    <h3>What is Lorem Ipsum?</h3>
                     <?php the_content(); ?>
                 </div>
 
