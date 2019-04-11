@@ -10,22 +10,17 @@
 
 <?php get_header()?>
 
-<div id="page-site-wrapper" class="contact-only">
+<div id="page-site-wrapper">
 
-    <div class="contact-title">
-        <h1>Say Hello</h1>
-        <h2>We are always ready to serve you!</h2>
-    </div>
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <h3 style="text-align:center"><?php the_title() ?></h3>
+        <?php the_content() ?>
 
-    <div class="contact-form">
-        <form id="contact-form" method="post" action="contact-form-handler.php">
-            <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
-            <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
-            <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
-            <input type="submit" class="form-control submit" value="SEND MESSAGE">
-        </form>
-    </div>
+    <?php endwhile; else : ?>
 
+        <p><?php _e( 'Sorry, page found.', 'treehouse-portfolio' ); ?></p>
+
+    <?php endif; ?>
 </div>
 
 <?php get_footer() ?>
