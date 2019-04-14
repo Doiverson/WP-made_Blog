@@ -83,7 +83,7 @@
             <div class="right-content">
                 <div class="small-about">
                     <h4>Shosuke Doi</h4>
-                    <p>Co-founder and technical director of Funkhaus, an LA-based creative agency. He is passionate about bringing a human-centric perspective to digital design.</p>
+                    <a href="<?php echo get_page_link(52) ?>">More about ME</a>
                 </div>
 
                 <div class="sns-list">
