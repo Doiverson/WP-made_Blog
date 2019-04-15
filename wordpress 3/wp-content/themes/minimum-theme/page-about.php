@@ -36,11 +36,11 @@
 
     <div class="sns-links">
         <ul>
-            <li><p><a href="">Instagram</a></p></li>
-            <li><p><a href="">Twitter</a></p></li>
-            <li><p><a href="">Github</a></p></li>
-            <li><p><a href="">LinkedIn</a></p></li>
-            <li><p><a href="">Spotify</a></p></li>
+            <li><p><a target="_blank" href="https://www.instagram.com/doiverson/">Instagram</a></p></li>
+            <li><p><a target="_blank" href="https://twitter.com/Doiverson_JPN">Twitter</a></p></li>
+            <li><p><a target="_blank" href="https://github.com/Doiverson">Github</a></p></li>
+            <li><p><a target="_blank" href="https://www.linkedin.com/in/shovancouver/">LinkedIn</a></p></li>
+            <li><p><a target="_blank" href="https://open.spotify.com/user/doiverson?si=oNUn8-ZwS-qVUCKjCbvAEA">Spotify</a></p></li>
         </ul>
     </div>
 

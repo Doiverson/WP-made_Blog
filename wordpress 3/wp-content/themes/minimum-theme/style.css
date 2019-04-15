@@ -68,7 +68,7 @@ header div span {
     top: 50%;
     transform: translateY(-50%);
     font-size: 1.5rem;
-    padding-left: .5rem;
+    padding-left: 1rem;
 }
 
 #menu-main-menu {
@@ -498,6 +498,7 @@ footer {
     -ms-transition: 0.5s ease-in;
     -o-transition: 0.5s ease-in;
     transition: 0.5s ease-in;
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -512,6 +513,7 @@ footer {
         right: 0;
         bottom: 100px;
         color: black;
+        border-bottom: 2px solid;
     }
 }
 
@@ -763,6 +765,7 @@ footer {
 .sns-links a {
     text-decoration: none;
     color: #ff5722;
+    font-size: 1.5rem;
 }
 
 /*Footer*/

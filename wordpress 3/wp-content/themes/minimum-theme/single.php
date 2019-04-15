@@ -22,7 +22,7 @@
 
                 <div class="title-lead">
                     <h1><?php the_title(); ?></h1>
-                    <p>Our awesome trip to Vietnam, Mind blowing experience and Breathtaking landacapes.</p>
+                    <p class="excerpt"><?php the_excerpt() ?></p>
                 </div>
 
             </div>
