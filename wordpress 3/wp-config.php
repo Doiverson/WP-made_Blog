@@ -18,6 +18,9 @@
  * @package WordPress
  */
 
+define( 'WPMS_ON', true );
+define( 'WPMS_SMTP_PASS', '464923323s' );
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'staygeek');

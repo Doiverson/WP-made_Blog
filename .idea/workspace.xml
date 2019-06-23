@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e994cdf-1b38-4077-a2fe-300e84d1da2b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/js/mansonry.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/js/mansonry.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,8 +23,42 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="513" column="22" selection-start-line="513" selection-start-column="22" selection-end-line="513" selection-end-column="22" />
+            <state relative-caret-position="336">
+              <caret line="108" column="5" lean-forward="true" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="e#2004#2087#0#HTML" expanded="true" />
+                <element signature="e#2752#2865#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+              <folding>
+                <element signature="e#6#91#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -28,17 +66,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/single.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
+            <state relative-caret-position="211">
               <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/page-about.php">
+        <entry file="file://$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/page-contact.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+            <state relative-caret-position="330">
+              <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+              <folding>
+                <element signature="e#6#121#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wordpress 3/wp-config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+              <folding>
+                <element signature="e#6#463#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,6 +133,10 @@
       <find>h4</find>
       <find>small-about</find>
       <find>header</find>
+      <find>grid-item h4</find>
+      <find>grid-si</find>
+      <find>img</find>
+      <find>link-img a</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -101,14 +158,12 @@
         <option value="$PROJECT_DIR$/js/mansonry.js" />
         <option value="$PROJECT_DIR$/html/article-pg.html" />
         <option value="$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/achive.php" />
-        <option value="$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/js/mansonry.js" />
         <option value="$PROJECT_DIR$/html/articleList-pg.html" />
         <option value="$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/page.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/html/about-pg.html" />
         <option value="$PROJECT_DIR$/scss/style.scss" />
         <option value="$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/page-gallery.php" />
-        <option value="$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/header.php" />
         <option value="$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/page-articles.php" />
         <option value="$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/js/scroll-loose.js" />
         <option value="$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/js/followingNav.js" />
@@ -116,9 +171,12 @@
         <option value="$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/contact-form-handler.php" />
         <option value="$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/functions.php" />
         <option value="$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/page-contact.php" />
-        <option value="$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/index.php" />
         <option value="$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/page-about.php" />
         <option value="$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/single.php" />
+        <option value="$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/js/mansonry.js" />
+        <option value="$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/index.php" />
+        <option value="$PROJECT_DIR$/wordpress 3/wp-config.php" />
+        <option value="$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/header.php" />
         <option value="$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/style.css" />
       </list>
     </option>
@@ -126,8 +184,9 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="width" value="1423" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="x" value="726" />
+    <option name="width" value="714" />
     <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -136,28 +195,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="WP_Blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="WP_Blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WP_Blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WP_Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WP_Blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WP_Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WP_Blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WP_Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WP_Blog" type="b2602c69:ProjectViewProjectNode" />
@@ -184,6 +227,15 @@
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="minimum-theme" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WP_Blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WP_Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="wordpress 3" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="minimum-theme" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WP_Blog" type="b2602c69:ProjectViewProjectNode" />
@@ -198,6 +250,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -303,21 +356,27 @@
       <workItem from="1554945339362" duration="4216000" />
       <workItem from="1555021405047" duration="2954000" />
       <workItem from="1555201881997" duration="560000" />
-      <workItem from="1555268288428" duration="8605000" />
+      <workItem from="1555268288428" duration="8652000" />
+      <workItem from="1555463257214" duration="7000" />
+      <workItem from="1561318147809" duration="897000" />
+      <workItem from="1561320038667" duration="5281000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="202780000" />
+    <option name="totallyTimeSpent" value="209012000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1423" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2810271" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28459343" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Project Explorer" order="4" />
+      <window_info id="DB Browser" order="5" />
+      <window_info id="Job Explorer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32920793" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3279703" />
@@ -327,9 +386,11 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.25618812" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2549505" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Console" order="12" />
+      <window_info anchor="bottom" id="DB Execution Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -493,13 +554,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/js/mansonry.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/js/followingNav.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -508,30 +562,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/contact-form-handler.php" />
-    <entry file="file://$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-          <folding>
-            <element signature="e#6#91#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/page-contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/page-articles.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -556,31 +586,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/index.php">
+    <entry file="file://$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/page-about.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="82" column="39" lean-forward="true" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
+        <state relative-caret-position="420">
+          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/page-about.php">
+    <entry file="file://$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        <state relative-caret-position="45">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/single.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
+        <state relative-caret-position="211">
           <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress 3/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="e#6#463#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/page-contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding>
+            <element signature="e#6#121#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/js/mansonry.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#2004#2087#0#HTML" expanded="true" />
+            <element signature="e#2752#2865#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+          <folding>
+            <element signature="e#6#91#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wordpress 3/wp-content/themes/minimum-theme/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="513" column="22" selection-start-line="513" selection-start-column="22" selection-end-line="513" selection-end-column="22" />
+        <state relative-caret-position="336">
+          <caret line="108" column="5" lean-forward="true" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
         </state>
       </provider>
     </entry>

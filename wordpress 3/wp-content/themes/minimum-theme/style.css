@@ -24,7 +24,7 @@ html {
 
 body {
     /*height: 100%;*/
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald','Noto Sans Japanese','Roboto','游ゴシック体','メイリオ',sans-serif;
     background: #f9f4ed;
 }
 
@@ -62,12 +62,12 @@ header div {
 }
 
 header div span {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Cabin Sketch', cursive;
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     padding-left: 1rem;
 }
 
@@ -82,6 +82,7 @@ header div span {
 }
 
 #menu-main-menu li a {
+    font-family: 'Cabin Sketch', cursive;
     text-decoration: none;
     padding: 5px;
     color: #000;
@@ -111,11 +112,11 @@ header div span {
     }
     header div span {
      padding-left: 0;
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     #menu-main-menu {
-        font-size: 1.3rem;
+        font-size: 1.7rem;
     }
 }
 
@@ -233,7 +234,6 @@ header div span {
 .article-container .articles .grid-item {
     width: calc(50% - 13px); /* subtract a half of gutter width for Masonry.js */
     opacity: 0;
-    transform: translateX(-20px);
 }
 
 .article-container .articles .grid-sizer .link-img,
@@ -245,13 +245,13 @@ header div span {
 .article-container .articles .grid-item .link-img a {
     display: block;
     width: 100%;
-    padding-top: 100%;
+    padding-top: 120%;
 }
 
 .article-container .articles .grid-sizer h4,
 .article-container .articles .grid-item h4 {
-    margin-top: 1rem;
-    margin-bottom: .5rem;
+    margin-top: .5rem;
+    margin-bottom: .1rem;
 }
 
 @media screen and (min-width: 550px) {
@@ -840,7 +840,7 @@ input.wpcf7-form-control.wpcf7-submit.send {
         width: 80%;
         margin: 0 auto;
     }
-    
+
     .name-email {
         display: flex;
     }
