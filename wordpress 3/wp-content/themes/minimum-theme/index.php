@@ -79,13 +79,9 @@
 
         <!--Small self-intro-->
         <div class="self-dsc">
-            <div class="left-img" style="background: url(<?php echo get_template_directory_uri() ?>/img/self-img.JPG) no-repeat center top / cover"></div>
+            <div class="left-img" style="background: url(<?php echo get_template_directory_uri() ?>/img/self-img.JPG) no-repeat center center / cover"></div>
             <div class="right-content">
-                <div class="small-about">
-                    <h4>Shosuke Doi</h4>
-                    <a href="<?php echo get_page_link(52) ?>">More about ME</a>
-                </div>
-
+                <div class="small-about"></div>
                 <div class="sns-list">
                     <a href="https://www.instagram.com/doiverson/" target="_blank"><i class="icn fa fa-instagram"></i></a>
                     <a href="https://twitter.com/Doiverson_JPN" target="_blank"><i class="icn fa fa-twitter-square"></i></a>

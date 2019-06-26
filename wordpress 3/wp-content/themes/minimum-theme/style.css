@@ -62,7 +62,7 @@ header div {
 }
 
 header div span {
-    font-family: 'Cabin Sketch', cursive;
+    font-family: 'Cabin Sketch', 'Roboto', cursive;
     position: absolute;
     left: 0;
     top: 50%;
@@ -93,12 +93,12 @@ header div span {
     border-bottom:2px solid #00b9ab;
     position: absolute;
     top:0;
-    background: #00b9ab;
+    /*background: #00b9ab;*/
     left:0;
     z-index: -1;
-    border-radius: 30px;
+    /*border-radius: 30px;*/
     display: block;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    /*box-shadow: 0 0 10px rgba(0,0,0,0.2);*/
 }
 
 @media screen and (min-width: 1000px) {
@@ -221,7 +221,7 @@ header div span {
     display: block;
     text-align: center;
     line-height: 3rem;
-    background: #f0f0f0;
+    border: solid 1px black;
     text-decoration: none;
 }
 
@@ -764,7 +764,7 @@ footer {
 
 .sns-links a {
     text-decoration: none;
-    color: #ff5722;
+    color: #f9f4ed;
     font-size: 1.5rem;
 }
 
@@ -794,6 +794,7 @@ textarea:focus {
 div.wpcf7 {
     margin: 0 auto;
     width: 80%;
+    padding-top: 30px;
 }
 
 .name-email {
