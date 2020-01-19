@@ -31,6 +31,7 @@
         $defaults = array(
             'container' => false,
             'theme_location' => 'primary-menu',
+            'menu_id' => 'menu-main-menu',
             'menu_class' => 'no-bullet'
         );
 
